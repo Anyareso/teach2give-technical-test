@@ -13,24 +13,33 @@
     <h1>FizzBuzz Program</h1>
     <style>
         body{
-            background-color: green;
+            background-color: #EADBC8;
+        }
+        h1{
+            text-align: center;
+            color: #102C57;
+        }
+        #output{
+            display: flex;
+            padding: 5px;
         }
         
     </style>
-    <script>
-        for (let i = 1; i <= 100; i++){
-            
-            if  (i % 3 === 0 && i){
-                document.write( i + " Fizz" + "<br>");
+    <div id="output">
+        <script>
+            for (let i = 1; i <= 100; i++){
+                
+                if  (i % 3 === 0 && i){
+                    document.write( i + " Fizz" + "<br>");
+                }
+                if (i % 5 === 0 && i){
+                    document.write(i + " Buzz" + "<br>");
+                }
+                if (i % 3 === 0 && i % 5 ===0){
+                    document.write(i + " FizzBuzz" + "<br>")
+                }
             }
-            if (i % 5 === 0 && i){
-                document.write(i + " Buzz" + "<br>");
-            }
-            if (i % 3 === 0 && i % 5 ===0){
-                document.write(i + " FizzBuzz" + "<br>")
-            }
-        }
-    </script>
-    
+        </script>
+    </div>
 </body>
 </html>
