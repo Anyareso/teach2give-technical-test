@@ -10,6 +10,18 @@
     Examples:
     8=> returns true
     6=> returns false -->
+
+    <h1>Power of 2 checker</h1>
+    <script>
+        const userInput = prompt("Enter a number");
+        const userInputNumber = parseInt(userInput);
+
+        if(userInputNumber > 0 && (userInputNumber & (userInputNumber - 1)) === 0){
+            alert("True");
+        }else{
+            alert("False");
+        }
+    </script>
     
 </body>
 </html>
